@@ -13,6 +13,7 @@
 body {
   /* font-family: "Exo", sans-serif; */
   font-family: sans-serif;
+  color: black;
 }
 
 a {
@@ -29,7 +30,7 @@ img {
 }
 
 .container {
-  width: 65%;
+  width: 80%;
   margin: auto;
 }
 
@@ -42,14 +43,19 @@ img {
   background-color: #f5f3ff;
   border-bottom: 1px solid #ddd6ff;
   z-index: 1000;
+  display: flex;
+  align-items: center;
 }
 
 #nav .container {
-  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #nav .container .logo {
-  float: left;
+  display: flex;
+  align-items: center;
 }
 
 #nav .container .logo i {
@@ -58,59 +64,65 @@ img {
   background-color: #8e51ff;
   color: white;
   border-radius: 10px;
-  text-align: center;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #nav .container .logo span {
   font-size: 24px;
-  color: black;
   font-weight: 700;
   padding-left: 10px;
 }
 
-#nav .container .hocks {
-  float: right;
+#nav .container .links {
+  display: flex;
+  align-items: center;
 }
 
-#nav .container .hocks a {
+#nav .container .links ul {
+  display: flex;
+  column-gap: 20px;
+}
+
+#nav .container .links ul li a {
   font-size: 16px;
   font-weight: 500;
-  color: black;
   transition: color 0.5s;
-  margin: 10px;
   position: relative;
 }
 
-#nav .container .hocks a::after {
+#nav .container .links a::after {
   content: "";
-  height: 1px;
+  height: 2px;
   width: 0;
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   transition: width 0.5s;
   background-color: #7f22fe;
-  margin-top: 4px;
 }
 
-#nav .container .hocks a:hover {
+#nav .container .links a:hover {
   color: #7f22fe;
 }
 
-#nav .container .hocks a:hover::after {
+#nav .container .links a:hover::after {
   width: 100%;
 }
 
 #home .container {
-  padding: 245px 0;
+  margin-top: 70px;
   height: 100dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
 }
 
 #home .container .product-image {
   width: 585px;
   height: 540px;
-  float: left;
   padding: 20px;
   border: 2px solid #e1e3e7;
   border-radius: 25px;
@@ -140,13 +152,12 @@ img {
 }
 
 #home .container .content {
-  float: left;
   text-align: left;
-  padding-left: 70px;
   width: 50%;
-}
-#home .container .content .benefit-tags {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 #home .container .content .benefit-tags .purble {
@@ -162,7 +173,6 @@ img {
 #home .container .content .description h1 {
   font-size: 48px;
   font-weight: 700;
-  color: black;
 }
 
 #home .container .content .description h1 span {
@@ -175,30 +185,27 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 33px;
-  color: black;
-  margin-top: 20px;
 }
 
 #home .container .content .price-tags {
-  margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+  justify-content: left;
+  align-items: center;
 }
 
 #home .container .content .price-tags .price-discount {
   font-size: 36px;
   font-weight: 700;
-  color: black;
-  padding-right: 20px;
-  display: inline-block;
+
   vertical-align: middle;
 }
 
 #home .container .content .price-tags .price {
   font-size: 24px;
   font-weight: 400;
-  color: black;
+
   text-decoration: line-through;
-  padding-right: 20px;
-  display: inline-block;
   vertical-align: middle;
 }
 
@@ -209,7 +216,6 @@ img {
   border-radius: 15px;
   padding: 5px 15px;
   background-color: #ffe2e2;
-  display: inline-block;
   vertical-align: middle;
 }
 
@@ -217,8 +223,6 @@ img {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  color: black;
-  margin: 20px 0 25px 0;
 }
 
 #home .container .content i {
@@ -229,14 +233,12 @@ img {
   color: white;
   background-color: #8e51ff;
   border: 0;
-  margin-bottom: 20px;
   transition:
     transform 0.2s,
     font-weight 0.2s;
 }
 
 #home .container .content .add-wishlist {
-  color: black;
   background-color: white;
   border: 2px solid #e1e3e7;
   transition:
@@ -261,4 +263,64 @@ img {
 #specifications {
   background-color: #f5f3ff;
   padding: 50px 0;
+}
+
+#specifications .container {
+  text-align: center;
+}
+
+#specifications .container h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+#specifications .container h2 span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #8e51ff;
+}
+
+.table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#specifications .container .table {
+  border: 2px solid #d1d5dc;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#specifications .container .table table {
+  text-align: center;
+  width: 100%;
+}
+
+#specifications .container .table thead th {
+  height: 75px;
+  font-size: 18px;
+}
+#specifications .container .table thead td {
+  height: 50px;
+  font-size: 18px;
+  border: 0;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+.weight-700 {
+  font-weight: 700;
+}
+.padding-L20 {
+  padding-left: 20px;
+}
+.color-p {
+  color: #7008e7;
+}
+.text-left {
+  text-align: left;
 }
