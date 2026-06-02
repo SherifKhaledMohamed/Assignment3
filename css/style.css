@@ -11,7 +11,8 @@
 }
 
 body {
-  font-family: "Exo", sans-serif;
+  /* font-family: "Exo", sans-serif; */
+  font-family: sans-serif;
 }
 
 a {
@@ -28,7 +29,7 @@ img {
 }
 
 .container {
-  width: 80%;
+  width: 65%;
   margin: auto;
 }
 
@@ -102,25 +103,28 @@ img {
 }
 
 #home .container {
-  padding: 140px 0;
+  padding: 245px 0;
   height: 100dvh;
 }
 
 #home .container .product-image {
-  height: 585px;
-  width: 584px;
+  width: 585px;
+  height: 540px;
   float: left;
   padding: 20px;
-  border: 1px solid #e1e3e7;
-  border-radius: 20px;
-}
-
-#home .container .product-image .image img {
-  border-radius: 20px;
+  border: 2px solid #e1e3e7;
+  border-radius: 25px;
 }
 
 #home .container .product-image .image {
   position: relative;
+  height: 100%;
+}
+
+#home .container .product-image .image img {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
 }
 
 #home .container .product-image .image span {
@@ -128,9 +132,133 @@ img {
   position: absolute;
   top: 20px;
   left: 20px;
-  border-radius: 10px;
-  padding: 0 10px;
+  border-radius: 15px;
+  padding: 5px 10px;
   color: white;
   font-size: 14px;
   font-weight: 700;
+}
+
+#home .container .content {
+  float: left;
+  text-align: left;
+  padding-left: 70px;
+  width: 50%;
+}
+#home .container .content .benefit-tags {
+  margin-bottom: 20px;
+}
+
+#home .container .content .benefit-tags .purble {
+  background-color: #a684ff;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 15px;
+  margin: 0 10px 0 0;
+}
+
+#home .container .content .description h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#home .container .content .description h1 span {
+  font-size: 48px;
+  font-weight: 700;
+  color: #8e51ff;
+}
+
+#home .container .content .description p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  color: black;
+  margin-top: 20px;
+}
+
+#home .container .content .price-tags {
+  margin-top: 20px;
+}
+
+#home .container .content .price-tags .price-discount {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+  padding-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#home .container .content .price-tags .price {
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+  text-decoration: line-through;
+  padding-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#home .container .content .price-tags .red-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e7000b;
+  border-radius: 15px;
+  padding: 5px 15px;
+  background-color: #ffe2e2;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#home .container .content .price-footer {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin: 20px 0 25px 0;
+}
+
+#home .container .content i {
+  margin-right: 10px;
+}
+
+#home .container .content .add-cart {
+  color: white;
+  background-color: #8e51ff;
+  border: 0;
+  margin-bottom: 20px;
+  transition:
+    transform 0.2s,
+    font-weight 0.2s;
+}
+
+#home .container .content .add-wishlist {
+  color: black;
+  background-color: white;
+  border: 2px solid #e1e3e7;
+  transition:
+    transform 0.2s,
+    font-weight 0.2s;
+}
+
+#home .container .content button {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#home .container .content button:hover {
+  transform: scale(1.03);
+  font-weight: 900px;
+}
+
+#specifications {
+  background-color: #f5f3ff;
+  padding: 50px 0;
 }
