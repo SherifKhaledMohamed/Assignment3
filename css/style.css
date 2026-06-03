@@ -88,6 +88,7 @@ img {
 #nav .container .links ul li a {
   font-size: 16px;
   font-weight: 500;
+  color: black;
   transition: color 0.5s;
   position: relative;
 }
@@ -266,18 +267,18 @@ img {
 }
 
 #specifications .container {
-  text-align: center;
   display: flex;
   flex-direction: column;
   row-gap: 70px;
+  justify-content: center;
 }
 
-#specifications .container h2 {
+#specifications .container .header h2 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-#specifications .container h2 span {
+#specifications .container .header h2 span {
   font-size: 36px;
   font-weight: 700;
   color: #8e51ff;
@@ -472,23 +473,34 @@ table tbody td.no-border {
 
 #specifications .container .winner {
   display: flex;
+  width: 350px;
+  height: 75px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #e5e7eb;
+  justify-content: center;
+  align-items: center;
+}
+
+#specifications .container .winner .icon {
 }
 
 #specifications .container .winner .content {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-#specifications .container .winner i {
+#specifications .container .winner .icon i {
   color: #00c950;
 }
 
-#specifications .container .winner h3 {
+#specifications .container .winner .content h3 {
   font-size: 18px;
   font-weight: 700;
   color: #00a63e;
+  display: block;
 }
-#specifications .container .winner span {
+#specifications .container .winner .content span {
   font-size: 14px;
   font-weight: 400;
   color: #00a63e;
