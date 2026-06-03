@@ -30,7 +30,7 @@ img {
 }
 
 .container {
-  width: 80%;
+  width: 65%;
   margin: auto;
 }
 
@@ -262,16 +262,20 @@ img {
 
 #specifications {
   background-color: #f5f3ff;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 #specifications .container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
 }
 
 #specifications .container h2 {
   font-size: 36px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 #specifications .container h2 span {
   font-size: 36px;
@@ -279,34 +283,175 @@ img {
   color: #8e51ff;
 }
 
-.table,
-tr,
-th,
-td {
-  border: 1px solid black;
+#specifications .container span.head {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+table {
   border-collapse: collapse;
+}
+
+table .bor-bot-2 {
+  border-bottom: 2px solid #dadee3;
+}
+table tbody td {
+  border-bottom: 1px solid #dadee3;
+}
+table tbody td.no-border {
+  border-bottom: 0;
 }
 
 #specifications .container .table {
   border: 2px solid #d1d5dc;
   background-color: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 
-#specifications .container .table table {
+.table table {
   text-align: center;
   width: 100%;
 }
 
-#specifications .container .table thead th {
-  height: 75px;
+.table thead th {
+  height: 70px;
   font-size: 18px;
+  align-content: center;
 }
-#specifications .container .table thead td {
-  height: 50px;
+.table thead td {
+  height: 35px;
+  font-size: 16px;
+  font-weight: 700;
+  align-content: flex-start;
+  color: #6a7282;
+}
+
+.table thead tr th.purbleBack {
+  background-color: #ede9fe;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.table thead tr td.purbleBack {
+  background-color: #ede9fe;
+}
+
+.table tbody tr td.purbleBack {
+  background-color: #ede9fe;
+}
+
+.table tfoot tr td.purbleBack {
+  background-color: #ede9fe;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.table tbody td.purbleBack span {
+  background-color: #8e51ff;
+  border-radius: 15px;
+  padding: 7px 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.table tbody td.purbleBack span i {
+  margin-right: 5px;
+}
+
+.table tbody td.red {
+  font-size: 16px;
+  font-weight: 400;
+  color: #f54900;
+}
+
+.table tbody td.red i {
+  margin-right: 5px;
+}
+
+.table tbody td.purblePrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7008e7;
+}
+
+.table tbody td.blackPrice {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.table td.size-14 {
+  font-size: 14px;
+}
+
+.table td.weight-500 {
+  font-weight: 500;
+}
+
+.table td.Overall {
   font-size: 18px;
-  border: 0;
+  font-weight: 700;
+}
+
+.table td.our-product {
+  font-weight: 500;
+  color: #8e51ff;
+}
+
+.table tbody td i {
+  margin-right: 10px;
+}
+
+.table td i.video {
+  color: #00b8db;
+}
+.table td i.camera {
+  color: #00bba7;
+}
+.table td i.battery {
+  color: #00c950;
+}
+.table td i.range {
+  color: #ff6900;
+}
+.table td i.speed {
+  color: #fb2c36;
+}
+.table td i.shield {
+  color: #00a6f4;
+}
+.table td i.scale {
+  color: #615fff;
+}
+.table td i.rain {
+  color: #2b7fff;
+}
+.table td i.price {
+  color: #f0b100;
+}
+
+.table td i.star {
+  color: #fdc700;
+}
+
+.table td i.star-gray {
+  color: #d1d5dc;
+}
+
+.table td {
+  height: 60px;
+}
+
+.table tfoot td {
+  height: 100px;
+}
+
+.table tfoot td span {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-top: 10px;
 }
 
 .weight-600 {
@@ -323,4 +468,18 @@ td {
 }
 .text-left {
   text-align: left;
+}
+
+#specifications .container .winner {
+  display: flex;
+}
+
+#specifications .container .winner i {
+  color: #00c950;
+}
+
+#specifications .container .winner h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00a63e;
 }
