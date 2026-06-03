@@ -30,7 +30,7 @@ img {
 }
 
 .container {
-  width: 65%;
+  width: 80%;
   margin: auto;
 }
 
@@ -271,6 +271,7 @@ img {
   flex-direction: column;
   row-gap: 70px;
   justify-content: center;
+  align-items: center;
 }
 
 #specifications .container .header h2 {
@@ -308,6 +309,7 @@ table tbody td.no-border {
   background-color: white;
   border-radius: 20px;
   padding: 30px;
+  align-self: stretch;
 }
 
 .table table {
@@ -432,7 +434,7 @@ table tbody td.no-border {
   color: #f0b100;
 }
 
-.table td i.star {
+.star {
   color: #fdc700;
 }
 
@@ -482,26 +484,151 @@ table tbody td.no-border {
   align-items: center;
 }
 
-#specifications .container .winner .icon {
-}
-
-#specifications .container .winner .content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#specifications .container .winner .icon i {
+#specifications .container .winner i {
+  margin-right: 20px;
   color: #00c950;
+  font-size: 26px;
 }
 
 #specifications .container .winner .content h3 {
   font-size: 18px;
   font-weight: 700;
   color: #00a63e;
-  display: block;
 }
 #specifications .container .winner .content span {
   font-size: 14px;
   font-weight: 400;
   color: #00a63e;
+}
+
+#reviews {
+  padding: 70px 0;
+}
+
+#reviews .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#reviews .container .header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#reviews .container .header h2 span {
+  font-size: 36px;
+  font-weight: 700;
+  color: #8e51ff;
+}
+
+#reviews .container span.head {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#reviews .container .body {
+  background-color: tomato;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 65px;
+}
+
+#reviews .container .body .card-stick {
+  background-color: green;
+  padding: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 15px;
+  width: 900px;
+}
+
+#reviews .container .body .rating-cards {
+    background-color: blue;
+}
+
+#reviews .container .body .rating-cards .card {
+  padding: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#reviews .container .body .rating-cards .card .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reviews .container .body .rating-cards .card .header .person {
+  display: flex;
+  column-gap: 20px;
+}
+
+#reviews .container .body .rating-cards .card .header .person .info {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+#reviews .container .body .rating-cards .card .header .person .info h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#reviews .container .body .rating-cards .card .header .person .info .job {
+  font-size: 16px;
+  font-weight: 400;
+}
+#reviews .container .body .rating-cards .card .header .person .info .rate span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#reviews .container .body .rating-cards .card .header .person img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #a684ff;
+  border-radius: 35px;
+}
+
+#reviews .container .body .rating-cards .card .header .person .info h4 {
+  display: inline-block;
+}
+
+#reviews
+  .container
+  .body
+  .rating-cards
+  .card
+  .header
+  .purchase
+  .purchase-purble {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5d0ec0;
+  background-color: #ede9fe;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#reviews .container .body .rating-cards .card .header .purchase .time {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+}
+
+#reviews .container .body .rating-cards .card .review {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
 }
