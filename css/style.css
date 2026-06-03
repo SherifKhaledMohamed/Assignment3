@@ -474,12 +474,22 @@ table tbody td.no-border {
   display: flex;
 }
 
+#specifications .container .winner .content {
+  display: flex;
+  justify-content: flex-start;
+}
+
 #specifications .container .winner i {
   color: #00c950;
 }
 
-#specifications .container .winner h2 {
+#specifications .container .winner h3 {
   font-size: 18px;
   font-weight: 700;
+  color: #00a63e;
+}
+#specifications .container .winner span {
+  font-size: 14px;
+  font-weight: 400;
   color: #00a63e;
 }
