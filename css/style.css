@@ -538,7 +538,6 @@ table tbody td.no-border {
 #reviews .container .body {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   gap: 50px;
   position: relative;
@@ -557,6 +556,26 @@ table tbody td.no-border {
   top: 30px;
   left: 0;
 }
+
+
+#reviews .container .body .card-stick .rating h3 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#reviews .container .body .card-stick .rating .rating-stars {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#reviews .container .body .card-stick .rating .rating-stars i {
+  font-size: 16px;
+}
+#reviews .container .body .card-stick .rating span.count {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 
 #reviews .container .body .rating-cards {
   width: 68%;
@@ -647,24 +666,6 @@ table tbody td.no-border {
   font-size: 18px;
   font-weight: 400;
   line-height: 29px;
-}
-
-#reviews .container .body .card-stick .rating h3 {
-  font-size: 60px;
-  font-weight: 700;
-}
-
-#reviews .container .body .card-stick .rating .rating-stars {
-  display: block;
-  margin-bottom: 10px;
-}
-
-#reviews .container .body .card-stick .rating .rating-stars i {
-  font-size: 16px;
-}
-#reviews .container .body .card-stick .rating span.count {
-  font-size: 16px;
-  font-weight: 500;
 }
 
 #reviews .container .body .rating-body {
