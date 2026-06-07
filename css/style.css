@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .clear-fix {
   clear: both;
 }
@@ -11,14 +15,14 @@
 }
 
 body {
-  /* font-family: "Exo", sans-serif; */
-  font-family: sans-serif;
+  font-family: "Exo", sans-serif;
   color: black;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
+  color: white;
 }
 
 ul {
@@ -810,6 +814,7 @@ table tbody td.no-border {
   border: 2px solid #e5e7eb;
   display: flex;
   flex-direction: column;
+  height: 420px;
 }
 
 #products .container .cards .card:hover img {
@@ -918,4 +923,146 @@ table tbody td.no-border {
   background-color: #7f22fe;
   border-color: #7f22fe;
   color: white;
+}
+
+#footer {
+  background-color: #101828;
+  color: white;
+}
+
+#footer .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 70px 0;
+}
+
+#footer .container .body {
+  display: flex;
+}
+
+#footer .container .body .info {
+  width: 25%;
+  padding-right: 30px;
+}
+
+#footer .container .body .info .logo {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+#footer .container .body .info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+#footer .container .body .info .logo .dji-logo {
+  width: 40px;
+  height: 40px;
+  background-color: #7f22fe;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#footer .container .body .info .logo h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#footer .container .body .socialmedia {
+  display: flex;
+  column-gap: 20px;
+}
+
+#footer .container .body .socialmedia .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #1e2939;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+#footer .container .body .socialmedia .icon.github:hover {
+  background-color: white;
+  color: #1e2939;
+}
+#footer .container .body .socialmedia .icon.linkedin:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+#footer .container .body .socialmedia .icon.facebook:hover {
+  background-color: #1877f2;
+  color: #1e2939;
+}
+#footer .container .body .socialmedia .icon.instagram:hover {
+  background-color: #e4405f;
+  color: #1e2939;
+}
+
+#footer .container .body .footer-list {
+  width: 25%;
+}
+
+#footer .container .body .footer-list h4 {
+  font: size 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#footer .container .body .footer-list ul a {
+  font: size 16px;
+  font-weight: 400;
+  color: #99a1af;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+#footer .container .body .footer-list ul a:hover {
+  color: white;
+}
+
+#footer .container .copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .copyrights .DJI {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#footer .copyrights .payment {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  column-gap: 20px;
+}
+
+#footer .copyrights .payment .image {
+  height: 35px;
+  object-fit: cover;
+  padding: 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#footer .copyrights .payment .image img {
+  height: 100%;
+}
+
+#footer .container hr {
+  border: 1px solid #1e2939;
 }
